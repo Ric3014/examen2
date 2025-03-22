@@ -1,0 +1,67 @@
+﻿@import url('crudcss.css');
+.contenedor {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    margin-top: 20px; /* Agrega un margen superior */
+}
+
+.formulario {
+    width: 40%; /* Ajusta el ancho según sea necesario */
+}
+
+.grid-container {
+    width: 58%; /* Ajusta el ancho según sea necesario */
+    display: flex;
+    justify-content: flex-end; /* Alinea el GridView a la derecha */
+    align-items: flex-start; /* Alinea el GridView en la parte superior */
+}
+
+.table {
+    width: 100%; /* La tabla ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra ligera */
+}
+
+    .table th, .table td {
+        border: 1px solid #ddd; /* Agrega bordes a las celdas */
+        padding: 8px; /* Agrega relleno a las celdas */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .table th {
+        background-color: #f2f2f2; /* Agrega un fondo gris a los encabezados */
+    }
+
+.buttons-container {
+    margin-top: 10px; /* Agrega espacio entre los campos y los botones */
+}
+
+.btn-crud {
+    margin-right: 5px; /* Agrega espacio entre los botones */
+    padding: 8px 15px; /* Ajusta el relleno de los botones */
+    border: none;
+    border-radius: 4px;
+    background-color: #3498db; /* Color de fondo de los botones */
+    color: white;
+    cursor: pointer;
+}
+
+    .btn-crud:hover {
+        background-color: #2980b9; /* Oscurece el color al pasar el cursor */
+    }
+
+/* Estilos adicionales para mejorar la apariencia */
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}

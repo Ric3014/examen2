@@ -4,6 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <link href="\css\Menucss.css" rel="stylesheet" />
+    <link href="\css\CRUDcss.css" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
 </head>
@@ -12,13 +14,13 @@
         <ul>
             <li><a href="Frm_Pacientes.aspx">Pacientes</a></li>
             <li><a href="Frm_Medicos.aspx">Medicos</a></li>
-            <li><a href="#Frm_Consultas.aspx">Consultas</a></li>
+            <li><a href="Frm_Consultas.aspx">Consultas</a></li>
         </ul>
 
         <div>
         </div>
         <div>
-            <h1>Catalogo de Pacientes</h1>
+            <h1>Catalogo de Medicos</h1>
         </div>
 
         <div class="contenedor">
@@ -32,7 +34,7 @@
                 <asp:Label ID="Label3" runat="server" Text="Especialidad"></asp:Label>
                 <asp:TextBox ID="tespecialidad" runat="server"></asp:TextBox>
                 <br />
-                
+
 
                 <div class="buttons-container">
                     <asp:Button ID="Button1" runat="server" Text="Agregar" CssClass="btn-crud" OnClick="bagregar_Click" />

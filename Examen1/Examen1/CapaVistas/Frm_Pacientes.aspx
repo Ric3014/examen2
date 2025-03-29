@@ -15,7 +15,7 @@
         <ul>
             <li><a href="Frm_Pacientes.aspx">Pacientes</a></li>
             <li><a href="Frm_Medicos.aspx">Medicos</a></li>
-            <li><a href="#Frm_Consultas.aspx">Consultas</a></li>
+            <li><a href="Frm_Consultas.aspx">Consultas</a></li>
         </ul>
 
         <div>

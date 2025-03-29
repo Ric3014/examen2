@@ -10,7 +10,7 @@ namespace Examen1.CapaLogica
 {
 	public class Logica_Medico
 	{
-        public static bool ExisteUsuario()
+        public static bool ExisteMedico()
         {
             bool existe = false;
             try
@@ -23,7 +23,7 @@ namespace Examen1.CapaLogica
 
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {
-                        comando.Parameters.AddWithValue("@ID_Medico",Cls_Medicos);
+                        comando.Parameters.AddWithValue("@ID_Medico",Cls_Medicos.ID_Medico);
                         int count = Convert.ToInt32(comando.ExecuteScalar());
                         existe = (count > 0);
                     }

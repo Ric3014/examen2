@@ -74,7 +74,7 @@ namespace Examen1.CapaLogica
                 using (SqlConnection conexion = new SqlConnection(s))
                 {
                     conexion.Open();
-                    string query = "DELETE FROM Paciente WHERE Cedula = @Cedula";
+                    string query = "DELETE FROM Pacientes WHERE Cedula = @Cedula";
 
                     using (SqlCommand comando = new SqlCommand(query, conexion))
                     {

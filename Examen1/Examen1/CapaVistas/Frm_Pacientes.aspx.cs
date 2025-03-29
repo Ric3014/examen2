@@ -32,16 +32,7 @@ namespace Examen1.CapaVistas
                 Cls_Pacientes.Cedula = int.Parse(tcedula.Text);
                 Cls_Pacientes.Nombre = tnombre.Text;
                 Cls_Pacientes.PrimerApellido = tapellido.Text;
-
-                if (DateTime.TryParse(tFechaNacimiento.Text, out DateTime fechaNacimiento))
-                {
-                    Cls_Pacientes.FechaNacimiento = fechaNacimiento.ToString(); // Convertir DateTime a string
-                }
-                else
-                {
-                    MostrarAlerta(this, "Fecha de nacimiento inválida.");
-                    return; // Detener la ejecución si la fecha es inválida
-                }
+                Cls_Pacientes.FechaNacimiento = DateTime.Parse(tFechaNacimiento.Text).ToString("yyyy-MM-dd");
                 Cls_Pacientes.Edad = int.Parse(tedad.Text);
                 Cls_Pacientes.Telefono = ttelefono.Text;
 
@@ -78,16 +69,7 @@ namespace Examen1.CapaVistas
             Cls_Pacientes.Cedula = int.Parse(tcedula.Text);
             Cls_Pacientes.Nombre = tnombre.Text;
             Cls_Pacientes.PrimerApellido = tapellido.Text;
-
-            if (DateTime.TryParse(tFechaNacimiento.Text, out DateTime fechaNacimiento))
-            {
-                Cls_Pacientes.FechaNacimiento = fechaNacimiento.ToString(); // Convertir DateTime a string
-            }
-            else
-            {
-                MostrarAlerta(this, "Fecha de nacimiento inválida.");
-                return; // Detener la ejecución si la fecha es inválida
-            }
+            Cls_Pacientes.FechaNacimiento = DateTime.Parse(tFechaNacimiento.Text).ToString("yyyy-MM-dd"); 
             Cls_Pacientes.Edad = int.Parse(tedad.Text);
             Cls_Pacientes.Telefono = ttelefono.Text;
             int resultado = Logica_Pacientes.Modificar();
